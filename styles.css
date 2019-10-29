@@ -1,0 +1,711 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-y: scroll;
+    margin: auto;
+    /* max-width: 1450px; */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    height: 55px;
+    background-color: rgba(255, 255, 255, 0.4); 
+    font-size: 27px;
+    color: #F2F0EF;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    width: 740px;
+    margin-left: 80px;
+    margin-bottom: 7px;
+    margin-right: 70px;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.banner span{
+    color: #F2F0EF;
+}
+
+#banner__one{
+    font-weight: 600;
+    font-size: 130px;
+    letter-spacing: 30px;
+}
+
+#banner__two{
+    font-size: 50px;
+}
+
+.main{
+    width: 100%;
+    position: relative;
+}
+
+.assorti{
+    background-color: #DDD2CF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.assorti, .services, .portfolio, .contacts span{
+    color: #001E00;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+a:hover{
+    color: #C0F9D5;
+}
+
+.about {
+    padding: 5% 0;
+}
+
+.about-content {
+    background: #d9d1ce;
+    position: relative; 
+    padding: 1.5em;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content::before {
+    position: absolute;
+    transform: rotate(-45deg) scale(-1, 1);
+    left: -10%;
+    width: 12em;
+    height: 25em;
+    bottom: 3%;
+    background-position: center;
+    -webkit-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    content: "";
+    z-index: -1;
+    opacity: .99;
+    background-image: url(images/onas.png);
+}
+
+.about-content::after {
+    position: absolute;
+    transform: rotate(115deg) scale(-1, 1);
+    right: -10%;
+    width: 12em;
+    height: 25em;
+    bottom: -20%;
+    background-position: center;
+    -webkit-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    content: "";
+    z-index: -1;
+    opacity: .99;
+    background-image: url(images/onas.png);
+}
+
+
+.about p {
+    font-family: "Open Sans";
+    font-size: 2em;
+    display: block;
+}
+
+.about p:nth-child(1) {
+    margin-bottom: 1em;
+}
+
+.about i {
+    font-style: normal;
+    color: #717b4c;
+}
+
+.assorti__flowers{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.button{
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    background-color: #679438;
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.assorti__card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 20px .5em;
+    margin-bottom: 30px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+.text p{
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.assorti__card img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.assorti__card span{
+    text-align: center;
+    font-size: 30px;
+}
+
+.services{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.services__price{
+    width: 70%;
+    background-color: #C0F9D5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.price__element{
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+}
+
+.price__element span{
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr{
+    width: 80%;
+    margin: 10px;
+    color: black;
+}
+
+.price__first{
+    margin-top: 30px;
+}
+
+.price__last{
+    margin-bottom: 30px;
+}
+
+.portfolio{
+    background-color: #C0F9D5;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-header {
+    margin-bottom: 4em;
+}
+
+.portfolio-block {
+    padding: .5em;
+    background: #eff7c7;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 3em;
+}
+
+.portfolio-block p {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.portfolio-imgs {
+    display: flex;
+    width: 100%;
+    align-items: stretch;    
+}
+
+.portfolio-block img {
+    max-width: 100%;
+    border: 3px solid #717b4c;
+}
+
+.image{
+    margin-right: 15px;
+}
+
+.contacts{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.contacts__data{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    width: 60%;
+    background-color: #DDD2CF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.contacts__data span{
+    font-size: 35px;
+}
+
+#Lisa{
+    margin-top: 30px;
+}
+
+.webs {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.webs li {
+    list-style: none;
+    display: inline-block;
+    width: 25%;
+    overflow: hidden;
+}
+
+.webs img {
+    width: 600%;
+    position: relative;
+    right: 115%;
+}
+
+.webs li:nth-child(2) img {
+    right: 205%;
+}
+
+.webs li:nth-child(3) img {
+    right: 295%;
+}
+
+.webs li:nth-child(4) img {
+    right: 385%;
+}
+
+.side-leafs {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    display: block;
+    background-repeat: repeat;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+.side-leafs img {
+    visibility: hidden;
+}
+
+.left-side-leafs {
+    left: 0;
+    background-position: 100% 0;
+    background-image: url(images/leftleaves.png);
+}
+
+.right-side-leafs {
+    right: 0;
+    background-image: url(images/rightleaves.png);
+}
+
+@media screen and (min-width: 1640px)
+{
+    .assorti__flowers{
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 1263px) and (max-width: 1364px)
+{
+    /*.assorti__card{
+        width: 200px;
+        height: 480px;
+    }*/
+    .price__element span{
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 1144px) and (max-width: 1263px)
+{
+    /*.assorti__card{
+        width: 180px;
+        height: 420px;
+    }*/
+    .text p{
+        font-size: 20px;
+    }
+    .text span{
+        font-size: 22px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    .assorti, .services, .portfolio, .contacts span{
+        font-size: 25px;
+    }
+    .price__element span{
+        font-size: 30px;
+    }
+    .photography p{
+        font-size: 25px;
+    }
+    .red_square p{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1143px)
+{
+    .header{
+        font-size: 24px;
+    }
+    #banner__one{
+        font-size: 100px;
+    }
+    .assorti__card{
+        width: 180px;
+        height: 420px;
+    }
+    .text p{
+        font-size: 20px;
+    }
+    .text span{
+        font-size: 22px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .assorti, .services, .portfolio, .contacts span{
+        font-size: 20px;
+    }
+    .price__element span{
+        font-size: 23px;
+    }
+    .red_square p{
+        font-size: 22px;
+    }
+    .photography p{
+        font-size: 22px;
+    }
+    .square_logo{
+        width: 40%;
+    }
+    .photography_logo{
+        width: 40%;
+    }
+    .red_square_portfolio{
+        flex-direction: column;
+        width: 90%;
+    }
+    .red_square_portfolio img{
+        width: 100%;
+        height: auto;
+    }
+    .red_square_portfolio img{
+        margin-bottom: 35px;
+    }
+    .photography_portfolio{
+        flex-direction: column;
+        width: 90%;
+    }
+    .photography_portfolio img{
+        width: 100%;
+        height: auto;
+    }
+    .photography_portfolio img{
+        margin-bottom: 35px;
+    }
+    .button{
+        padding: 4px 18px;
+        border-radius: 18px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 588px) and (max-width: 819px)
+{
+    .header{
+        font-size: 18px;
+    }
+    .about p {
+        font-size: 1em;
+    }
+    .about-content::before, .about-content::after {
+        width: 7em;
+        height: 15em;
+    }
+    #banner__one{
+        font-size: 85px;
+    }
+    #banner__two{
+        font-size: 35px;
+    }
+    .contacts__data{
+        width: 70%;
+    }
+    .tel, .mail, #Lisa span{
+        font-size: 22px;
+    }
+    .assorti__card{
+        width: 160px;
+        height: 360px;
+    }
+    .text p{
+        font-size: 18px;
+    }
+    .text span{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .assorti, .services, .portfolio, .contacts span{
+        font-size: 18px;
+    }
+    .price__element span{
+        font-size: 15px;
+    }
+    .red_square{
+        margin-bottom: 100px;
+    }
+    .red_square p{
+        font-size: 22px;
+    }
+    .photography p{
+        font-size: 22px;
+    }
+    .square_logo{
+        width: 40%;
+    }
+    .photography_logo{
+        width: 40%;
+    }
+    .red_square_portfolio{
+        flex-direction: column;
+        width: 90%;
+    }
+    .red_square_portfolio img{
+        width: 100%;
+        height: auto;
+    }
+    .red_square_portfolio img{
+        margin-bottom: 35px;
+    }
+    .photography_portfolio{
+        flex-direction: column;
+        width: 90%;
+    }
+    .photography_portfolio img{
+        width: 100%;
+        height: auto;
+    }
+    .photography_portfolio img{
+        margin-bottom: 35px;
+    }
+    .button{
+        padding: 3px 15px;
+        border-radius: 16px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 588px)
+{
+    .header{
+        font-size: 14px;
+        height: 40px;
+    }
+    .about p {
+        font-size: 0.7em;
+    }
+    .about-content::before, .about-content::after {
+        width: 5em;
+        height: 12em;
+    }
+    .header__nav{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #banner__one{
+        font-size: 40px;
+        letter-spacing: 15px;
+        font-weight: 800;
+    }
+    #banner__two{
+        font-size: 15px;
+    }
+    .assorti__card{
+        width: 180px;
+        height: 360px;
+    }
+    .text p{
+        font-size: 16px;
+    }
+    .text span{
+        font-size: 17px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    hr{
+        margin: 20px;
+    }
+    .assorti, .services, .portfolio, .contacts span{
+        font-size: 17px;
+        text-align: center;
+    }
+    .contacts__data{
+        width: 80%;
+    }
+    .price__element{
+        flex-direction: column;
+    }
+    .price__element span{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .red_square{
+        margin-bottom: 80px;
+    }
+    .red_square p{
+        font-size: 19px;
+        text-align: left;
+    }
+    .photography p{
+        font-size: 19px;
+        text-align: left;
+    }
+    .square_logo{
+        width: 60%;
+    }
+    .photography_logo{
+        width: 60%;
+    }
+    .red_square_portfolio{
+        flex-direction: column;
+        width: 90%;
+    }
+    .red_square_portfolio img{
+        width: 100%;
+        height: auto;
+    }
+    .red_square_portfolio img{
+        margin-bottom: 35px;
+    }
+    .photography_portfolio{
+        flex-direction: column;
+        width: 90%;
+    }
+    .photography_portfolio img{
+        width: 100%;
+        height: auto;
+    }
+    .photography_portfolio img{
+        margin-bottom: 35px;
+    }
+    .button{
+        padding: 3px 15px;
+        border-radius: 16px;
+        font-size: 20px;
+    }
+}
