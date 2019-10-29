@@ -542,8 +542,8 @@ hr{
         font-size: 1.2em;
     }
     .about-content::before, .about-content::after {
-        width: 10em;
-        height: 18em;
+        width: 8em;
+        height: 15em;
     }
     .about-content::before {
         bottom: 70%;
@@ -633,8 +633,8 @@ hr{
         font-size: 1em;
     }
     .about-content::before, .about-content::after {
-        width: 10em;
-        height: 18em;
+        width: 9em;
+        height: 14em;
     }
     .about-content::before {
         bottom: 70%;
