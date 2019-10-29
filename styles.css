@@ -535,6 +535,9 @@ hr{
 
 @media screen and (min-width: 588px) and (max-width: 819px)
 {
+    .side-leafs {
+        width: 20%;
+    }
     .header{
         font-size: 18px;
     }
@@ -625,6 +628,9 @@ hr{
 
 @media screen and (min-width: 320px) and (max-width: 588px)
 {
+    .side-leafs {
+        width: 20%;
+    }
     .header{
         font-size: 14px;
         height: 40px;
