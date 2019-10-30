@@ -213,14 +213,13 @@ a:hover{
 
 .carousel-button-left {
     border-width: 1em 2em 1em 0;
-    border-color: transparent #679438 transparent transparent;
-    margin-right:.3em;
+    border-color: transparent #717b4c transparent transparent;
+    margin-right: 1em;
 }
 
 .carousel-button-right {
     border-width: 1em 0 1em 2em;
-    border-color: transparent transparent transparent #679438;
-    margin-left:.3em;
+    border-color: transparent transparent transparent #717b4c;
 }
 
 .button{
@@ -258,6 +257,7 @@ a:hover{
     justify-content: center;
     text-align: center;
     width: 100%;
+    text-align: right;
 }
 
 .text p{
@@ -318,6 +318,10 @@ a:hover{
 
 .price__element{
     width: 80%;
+}
+
+.price__element:nth-of-type(2) span{
+    margin-left: .08em;
 }
 
 .price__element span{
@@ -651,11 +655,11 @@ hr{
     }
     .carousel-button-left {
         border-width: .8em 1.6em .8em 0;
-        border-color: transparent #679438 transparent transparent;
+        border-color: transparent #717b4c transparent transparent;
     }
     .carousel-button-right {
         border-width: .8em 0 .8em 1.6em;
-        border-color: transparent transparent transparent #679438;
+        border-color: transparent transparent transparent #717b4c;
     }
     h1{
         font-size: 45px;
@@ -755,11 +759,11 @@ hr{
     }
     .carousel-button-left {
         border-width: .7em 1.4em .7em 0;
-        border-color: transparent #679438 transparent transparent;
+        border-color: transparent #717b4c transparent transparent;
     }
     .carousel-button-right {
         border-width: .7em 0 .7em 1.4em;
-        border-color: transparent transparent transparent #679438;
+        border-color: transparent transparent transparent #717b4c;
     }
     .text h2 {
         font-size: .8em;
@@ -781,7 +785,7 @@ hr{
         flex-direction: column;
     }
     .price__element span{
-        font-size: 20px;
+        font-size: 13px;
         margin-bottom: 10px;
     }
     .red_square{
