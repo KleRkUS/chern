@@ -95,23 +95,28 @@ a:hover{
 
 .about {
     display: flex;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;  
-    -webkit-justify-content: center;
-            justify-content: center;
-    -webkit-align-items:  center;
-            align-items:  center;    
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;  
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+        -webkit-align-items: center;
+                 align-items: center; 
     height: 100vh;
     width: 100%;
 }
 
+.about h1 {
+    vertical-align: top;
+}
+
 .about-content {
+    margin: auto 0;
     height: auto;
-    background: #d9d1ce;
+    background: #e6ddda;
     position: relative; 
-    padding: 2em;
-    width: 50%;
+    padding: 1.7em 3.2em;
+    width: 40%;
     text-align: center;
 }
 
@@ -121,7 +126,7 @@ a:hover{
     left: -10%;
     width: 12em;
     height: 25em;
-    bottom: 3%;
+    bottom: -15%;
     background-position: center;
     -webkit-background-size: contain;
          -o-background-size: contain;
@@ -140,7 +145,7 @@ a:hover{
     right: -10%;
     width: 12em;
     height: 25em;
-    bottom: -20%;
+    bottom: -30%;
     background-position: center;
     -webkit-background-size: contain;
          -o-background-size: contain;
@@ -156,12 +161,12 @@ a:hover{
 
 .about p {
     font-family: "Open Sans";
-    font-size: 2em;
+    font-size: 1.6em;
     display: block;
 }
 
 .about p:nth-child(1) {
-    margin-bottom: 1em;
+    margin-bottom: .6em;
 }
 
 .about i {
@@ -169,15 +174,46 @@ a:hover{
     color: #717b4c;
 }
 
-.assorti__flowers{
-    width: 80vw;
-    display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
+.carousel-outer{
+    width: 75vw;
+    background: #e6dcd8;
+    text-align: center; 
+    padding: 1em;
     margin-top: 50px;
     margin-bottom: 80px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 10000%;
+    transition: all .2s ease-in-out;
+}
+
+.carousel {
+    width: 85%;
+    overflow: hidden;
+}
+
+.carousel-button {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.carousel, .carousel-button {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.carousel-button-left {
+    border-width: 1em 2em 1em 0;
+    border-color: transparent #679438 transparent transparent;
+}
+
+.carousel-button-right {
+    border-width: 1em 0 1em 2em;
+    border-color: transparent transparent transparent #679438;
 }
 
 .button{
@@ -196,25 +232,25 @@ a:hover{
 }
 
 .assorti__card{
-    width: 30%;
+    width: 1%;
     display: flex;
     align-self: flex-start;
     float: left;  
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    margin: 20px .5em;
+    margin: 20px 0;
     margin-bottom: 30px;
 }
 
 .text{
+    vertical-align: middle; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     width: 100%;
-    margin-bottom: auto;
 }
 
 .text p{
@@ -226,14 +262,22 @@ a:hover{
     margin-top: 10px;
 }
 
+.text .button {
+    padding: .5em 1em;
+}
+
 .assorti__card img{
-    width: 100%;
-    margin-bottom: 20px;
+    width: 30%; 
 }
 
 .assorti__card span{
     text-align: center;
     font-size: 30px;
+    margin: .8em 0 .7em 0;
+}
+
+.assorti__card h2 {
+    font-size: 1em;
 }
 
 .services{
@@ -258,9 +302,7 @@ a:hover{
 }
 
 .price__element{
-    display: flex;
-    justify-content: space-between;
-    width: inherit;
+    width: 80%;
 }
 
 .price__element span{
@@ -268,10 +310,16 @@ a:hover{
     font-family: 'Open Sans', sans-serif;
 }
 
+.price__element span:nth-of-type(2) {
+    text-align: left;
+    width: 25%;
+    float: right;
+}
+
 hr{
-    width: 80%;
+    width: 85%;
     margin: 10px;
-    color: black;
+    border: .5px solid rgb(0, 30, 0);
 }
 
 .price__first{
@@ -283,7 +331,7 @@ hr{
 }
 
 .portfolio{
-    background-color: #c8d19b;
+    background-color: #eff7c7;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -292,19 +340,33 @@ hr{
     margin-bottom: 50px;
 }
 
+.portfolio h1 {
+    margin-top: 1.2em;
+}
+
 .portfolio-header {
+    margin-top: 1em;
     margin-bottom: 4em;
 }
 
 .portfolio-block {
-    padding: .5em;
-    background: #eff7c7;
+    padding: .8em;
+    background: #dfe8b0;
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 3em;
+}
+
+.portfolio-block a {
+    font-weight: 600;   
+}
+
+.portfolio-block a:hover {
+    color: rgb(0, 30, 0);
+    text-decoration: underline;
 }
 
 .portfolio-block p {
@@ -326,6 +388,11 @@ hr{
 }
 
 .image{
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    align-content: stretch;
     margin-right: 15px;
 }
 
@@ -340,10 +407,9 @@ hr{
 }
 
 .contacts__data{
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding: 2.3em 0;
     width: 60%;
-    background-color: #DDD2CF;
+    background-color: #e6ddda;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -357,12 +423,12 @@ hr{
 }
 
 #Lisa{
-    margin-top: 30px;
+    margin-top: .2em;
 }
 
 .webs {
-    width: 30%;
-    margin: 0 auto;
+    width: 25%;
+    margin: -2% auto 0 auto;
 }
 
 .webs li {
@@ -373,21 +439,21 @@ hr{
 }
 
 .webs img {
-    width: 600%;
+    width: 650%;
     position: relative;
-    right: 115%;
+    right: 130%;
 }
 
 .webs li:nth-child(2) img {
-    right: 205%;
+    right: 230%;
 }
 
 .webs li:nth-child(3) img {
-    right: 295%;
+    right: 325%;
 }
 
 .webs li:nth-child(4) img {
-    right: 385%;
+    right: 420%;
 }
 
 .side-leafs {
@@ -472,10 +538,6 @@ hr{
     }
     #banner__one{
         font-size: 100px;
-    }
-    .assorti__card{
-        width: 180px;
-        height: 420px;
     }
     .text p{
         font-size: 20px;
@@ -563,15 +625,19 @@ hr{
     .tel, .mail, #Lisa span{
         font-size: 22px;
     }
-    .assorti__card{
-        width: 160px;
-        height: 360px;
-    }
     .text p{
         font-size: 18px;
     }
     .text span{
         font-size: 20px;
+    }
+    .carousel-button-left {
+        border-width: .8em 1.6em .8em 0;
+        border-color: transparent #679438 transparent transparent;
+    }
+    .carousel-button-right {
+        border-width: .8em 0 .8em 1.6em;
+        border-color: transparent transparent transparent #679438;
     }
     h1{
         font-size: 45px;
@@ -657,15 +723,25 @@ hr{
     #banner__two{
         font-size: 2.3em;
     }
-    .assorti__card{
-        width: 180px;
-        height: 360px;
-    }
     .text p{
-        font-size: 16px;
+        font-size: .7em;
     }
     .text span{
         font-size: 17px;
+    }
+    .assorti__card img {
+        width: 25%;
+    }
+    .carousel-button-left {
+        border-width: .7em 1.4em .7em 0;
+        border-color: transparent #679438 transparent transparent;
+    }
+    .carousel-button-right {
+        border-width: .7em 0 .7em 1.4em;
+        border-color: transparent transparent transparent #679438;
+    }
+    .text h2 {
+        font-size: .8em;
     }
     h1{
         font-size: 35px;
