@@ -107,7 +107,12 @@ a:hover{
 }
 
 .about h1 {
+    margin-top: 1em;
     vertical-align: top;
+}
+
+.fish {
+    font-size: 1.4em;
 }
 
 .about-content {
@@ -115,7 +120,7 @@ a:hover{
     height: auto;
     background: #e6ddda;
     position: relative; 
-    padding: 1.7em 3.2em;
+    padding: 2.3em 3.2em;
     width: 40%;
     text-align: center;
 }
@@ -190,7 +195,7 @@ a:hover{
 }
 
 .carousel {
-    width: 85%;
+    width: 80%;
     overflow: hidden;
 }
 
@@ -209,11 +214,13 @@ a:hover{
 .carousel-button-left {
     border-width: 1em 2em 1em 0;
     border-color: transparent #679438 transparent transparent;
+    margin-right:.3em;
 }
 
 .carousel-button-right {
     border-width: 1em 0 1em 2em;
     border-color: transparent transparent transparent #679438;
+    margin-left:.3em;
 }
 
 .button{
@@ -290,6 +297,14 @@ a:hover{
     margin-bottom: 50px;
 }
 
+.services .fish {
+    margin-top: .8em;
+}
+
+.services h1 {
+    margin-top: .8em;
+}
+
 .services__price{
     width: 70%;
     background-color: #c8d19b;
@@ -297,8 +312,8 @@ a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
-    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-top: 60px;
 }
 
 .price__element{
@@ -428,7 +443,7 @@ hr{
 
 .webs {
     width: 25%;
-    margin: -2% auto 0 auto;
+    margin: -2% auto -3.5% auto;
 }
 
 .webs li {
@@ -631,6 +646,9 @@ hr{
     .text span{
         font-size: 20px;
     }
+    .carousel {
+        width: 75%;
+    }
     .carousel-button-left {
         border-width: .8em 1.6em .8em 0;
         border-color: transparent #679438 transparent transparent;
@@ -731,6 +749,9 @@ hr{
     }
     .assorti__card img {
         width: 25%;
+    }
+    .carousel {
+        width: 70%;
     }
     .carousel-button-left {
         border-width: .7em 1.4em .7em 0;
