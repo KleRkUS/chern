@@ -80,6 +80,7 @@ h1{
 .assorti, .services, .portfolio, .contacts span{
     color: #001E00;
     font-size: 30px;
+    font-weight: 700;
 }
 
 a{
@@ -440,6 +441,7 @@ hr{
 
 .contacts__data span{
     font-size: 35px;
+    font-weight: 400;
 }
 
 #Lisa{
