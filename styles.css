@@ -31,7 +31,7 @@ h1{
 .header__nav{
     display: flex;
     justify-content: space-between;
-    width: 740px;
+    width: 840px;
     margin-left: 80px;
     margin-bottom: 7px;
     margin-right: 70px;
@@ -79,7 +79,6 @@ h1{
 
 .assorti, .services, .portfolio, .contacts span{
     color: #001E00;
-    font-family: 'Open Sans', sans-serif;
     font-size: 30px;
 }
 
@@ -184,7 +183,6 @@ a:hover{
     background: #e6dcd8;
     text-align: center; 
     padding: 1em;
-    margin-top: 50px;
     margin-bottom: 80px;
 }
 
@@ -274,7 +272,8 @@ a:hover{
 }
 
 .assorti__card img{
-    width: 30%; 
+    width: 30%;
+    border: 2px solid #717b4c;
 }
 
 .assorti__card span{
@@ -364,8 +363,10 @@ hr{
 }
 
 .portfolio-header {
-    margin-top: 1em;
-    margin-bottom: 4em;
+    font-size: 1em;
+    margin-top: .5em;
+    margin-bottom: 2.4em;
+    text-align: center;
 }
 
 .portfolio-block {
